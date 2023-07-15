@@ -12,7 +12,7 @@ import com.untukwarga.id.core.common.NavigationConstant
 
 @Composable
 fun AppNavGraph(navHostController: NavHostController, navigationProvider: NavigationProvider){
-    NavHost(navController = navHostController, startDestination = NavigationConstant.loginNestedRoute ){
+    NavHost(navController = navHostController, startDestination = NavigationConstant.mainPageNestedRoute ){
         navigationProvider.loginApi.registerGraph(
             navHostController, this
         )

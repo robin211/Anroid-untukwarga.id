@@ -1,5 +1,7 @@
 package com.untukwarga.id.feature.mainpage.ui.screen
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.keyframes
 import androidx.compose.animation.slideInVertically
@@ -32,6 +34,7 @@ import com.untukwarga.id.feature.mainpage.ui.R
  * @author Robin D. Putera
  * @date 08/07/2023
  */
+@RequiresApi(Build.VERSION_CODES.TIRAMISU)
 @Composable
 fun MainPageScreen(mainNavController : NavHostController) {
     val navController = rememberNavController()
@@ -80,11 +83,12 @@ fun BottomBar(navHostController: NavHostController, bottomBarState: MutableState
                 val currentRoute = navBackStackEntry?.destination?.route
 
                 screens.forEach { item ->
+                    var selected = currentRoute == item.route
                     BottomNavigationItem(
                         icon = {
-                            if (item.iconId != null) {
+                            if (item.selectedIconId != null && item.unselectedIconId != null) {
                                 Icon(
-                                    imageVector = ImageVector.vectorResource(id = item.iconId),
+                                    imageVector = ImageVector.vectorResource(id = if (selected)item.selectedIconId else item.unselectedIconId),
                                     contentDescription = item.title
                                 )
                             }

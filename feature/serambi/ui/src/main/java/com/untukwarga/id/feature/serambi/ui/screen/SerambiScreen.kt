@@ -128,7 +128,7 @@ fun ContentSection(dummy: List<DummyContent>, navHostController: NavHostControll
             beyondBoundsPageCount = 3,
             flingBehavior = fling,
             contentPadding = PaddingValues(horizontal = 16.dp),
-            pageSpacing = 16.dp,
+            pageSpacing = 8.dp,
             modifier = Modifier
                 .fillMaxSize()
                 .pointerInput(Unit) {

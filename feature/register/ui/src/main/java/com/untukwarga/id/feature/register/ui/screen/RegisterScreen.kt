@@ -119,7 +119,7 @@ fun RegisterContent(
         TextFieldPassword(placeHolder = "Ulangi kata sandi", txt = txtConfirmPassword)
 
         Spacer(modifier = Modifier.height(16.dp))
-        Text14PxJakartaMedium600(text = "Provinsi")
+        Text14PxJakartaMedium600(text = "Lokasi Saat Ini")
         Spacer(modifier = Modifier.height(8.dp))
         if (provinceResult.isLoading) {
             CircularProgressIndicator(
@@ -146,8 +146,8 @@ fun RegisterContent(
         }
 
         if (txtProvinsi.value != "") {
-            Spacer(modifier = Modifier.height(16.dp))
-            Text14PxJakartaMedium600(text = "Kabupaten/Kota")
+//            Spacer(modifier = Modifier.height(16.dp))
+//            Text14PxJakartaMedium600(text = "Kabupaten/Kota")
             Spacer(modifier = Modifier.height(8.dp))
             if (cityResult.isLoading) {
                 CircularProgressIndicator(
@@ -175,8 +175,8 @@ fun RegisterContent(
         }
 
         if (txtKabupaten.value != "") {
-            Spacer(modifier = Modifier.height(16.dp))
-            Text14PxJakartaMedium600(text = "Kecamatan")
+//            Spacer(modifier = Modifier.height(16.dp))
+//            Text14PxJakartaMedium600(text = "Kecamatan")
             Spacer(modifier = Modifier.height(8.dp))
             if (districtResult.isLoading) {
                 CircularProgressIndicator(
@@ -204,8 +204,8 @@ fun RegisterContent(
         }
 
         if (txtKecamatan.value != "") {
-            Spacer(modifier = Modifier.height(16.dp))
-            Text14PxJakartaMedium600(text = "Kelurahan/Desa")
+//            Spacer(modifier = Modifier.height(16.dp))
+//            Text14PxJakartaMedium600(text = "Kelurahan/Desa")
             Spacer(modifier = Modifier.height(8.dp))
             if (subDistrictResult.isLoading) {
                 CircularProgressIndicator(

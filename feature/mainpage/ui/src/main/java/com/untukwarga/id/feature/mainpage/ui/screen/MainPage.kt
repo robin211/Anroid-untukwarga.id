@@ -10,31 +10,37 @@ import com.untukwarga.id.feature.mainpage.ui.R
 sealed class MainPage(
     val route: String?,
     val title: String?,
-    val iconId: Int?
+    val unselectedIconId: Int?,
+    val selectedIconId: Int?
 ) {
     object Serambi : MainPage(
         route = NavigationConstant.serambiScreenRoute,
         title = "Serambi",
-        iconId = R.drawable.serambi
+        unselectedIconId = R.drawable.serambi,
+        selectedIconId = R.drawable.serambifilled
     )
     object Selasar : MainPage(
         route = NavigationConstant.selasarScreenRoute,
         title = "Selasar",
-        iconId = R.drawable.selasar
+        unselectedIconId = R.drawable.selasar,
+        selectedIconId = R.drawable.selasar
     )
     object Blank : MainPage(
         route = null,
         title = "",
-        iconId = null
+        unselectedIconId = null,
+        selectedIconId = null
     )
     object Pustaka : MainPage(
         route = NavigationConstant.pustakaScreenRoute,
         title = "Pustaka",
-        iconId = R.drawable.pustaka
+        unselectedIconId = R.drawable.pustaka,
+        selectedIconId = R.drawable.pustaka
     )
     object Daku : MainPage(
         route = NavigationConstant.dakuScreenRoute,
         title = "Daku",
-        iconId = R.drawable.daku
+        unselectedIconId = R.drawable.daku,
+        selectedIconId = R.drawable.dakufilled
     )
 }
