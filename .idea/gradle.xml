@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="Android Studio java home" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/core/api" />
+            <option value="$PROJECT_DIR$/core/common" />
+            <option value="$PROJECT_DIR$/core/network" />
+            <option value="$PROJECT_DIR$/feature" />
+            <option value="$PROJECT_DIR$/feature/login" />
+            <option value="$PROJECT_DIR$/feature/login/data" />
+            <option value="$PROJECT_DIR$/feature/login/domain" />
+            <option value="$PROJECT_DIR$/feature/login/ui" />
+            <option value="$PROJECT_DIR$/feature/mainpage" />
+            <option value="$PROJECT_DIR$/feature/mainpage/ui" />
+            <option value="$PROJECT_DIR$/feature/register" />
+            <option value="$PROJECT_DIR$/feature/register/data" />
+            <option value="$PROJECT_DIR$/feature/register/domain" />
+            <option value="$PROJECT_DIR$/feature/register/ui" />
+            <option value="$PROJECT_DIR$/feature/selasar" />
+            <option value="$PROJECT_DIR$/feature/selasar/ui" />
+            <option value="$PROJECT_DIR$/feature/serambi" />
+            <option value="$PROJECT_DIR$/feature/serambi/data" />
+            <option value="$PROJECT_DIR$/feature/serambi/domain" />
+            <option value="$PROJECT_DIR$/feature/serambi/ui" />
+            <option value="$PROJECT_DIR$/feature/serambireels" />
+            <option value="$PROJECT_DIR$/feature/serambireels/ui" />
+            <option value="$PROJECT_DIR$/feature/sos" />
+            <option value="$PROJECT_DIR$/feature/sos/data" />
+            <option value="$PROJECT_DIR$/feature/sos/domain" />
+            <option value="$PROJECT_DIR$/feature/sos/ui" />
+            <option value="$PROJECT_DIR$/feature/webview" />
+            <option value="$PROJECT_DIR$/feature/webview/ui" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

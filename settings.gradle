@@ -1,0 +1,35 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "untukwarga.id"
+include ':app'
+include ':core:api'
+include ':core:common'
+include ':core:network'
+include ':feature:login:data'
+include ':feature:login:domain'
+include ':feature:login:ui'
+include ':feature:register:data'
+include ':feature:register:domain'
+include ':feature:register:ui'
+include ':feature:mainpage:ui'
+include ':feature:sos:data'
+include ':feature:sos:domain'
+include ':feature:sos:ui'
+include ':feature:serambi:data'
+include ':feature:serambi:domain'
+include ':feature:serambi:ui'
+include ':feature:serambireels:ui'
+include ':feature:webview:ui'
+include ':feature:selasar:ui'
